@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace CSarpEx.Ex08
+namespace ExamCSarpStudy.Ex08
 {
     public interface ILogger
     {
@@ -38,7 +38,7 @@ namespace CSarpEx.Ex08
     }
     class Ex08_1
     {
-        static void Main08_1()
+        public static void Main08_1()
         {
             MyLogger myLogger = new();
             myLogger.Log("Invalid data");   // logger.Log("Error", "Invalid data"); 에러

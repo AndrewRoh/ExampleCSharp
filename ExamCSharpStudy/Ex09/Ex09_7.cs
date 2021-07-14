@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSarpEx
+namespace ExamCSarpStudy.Ex09
 {
     class Ex09_7
     {
-        static void Main09_7()
+        public static void Main09_7()
         {
             nint a = 5;
             int b = 10;

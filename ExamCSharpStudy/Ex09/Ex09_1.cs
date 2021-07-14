@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSarpEx
+namespace ExamCSarpStudy.Ex09
 {
     public record Person1
     {
@@ -24,7 +24,7 @@ namespace CSarpEx
     }
     class Ex09_1
     {
-        static void Main09_1(string[] args)
+        public static void Main09_1(string[] args)
         {
             // Constructor 사용
             Person1 p1 = new Person1("Tom", 30);

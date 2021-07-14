@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSarpEx
+namespace ExamCSarpStudy.Ex09
 {
     public class Employee2 { }
     public class Fulltime : Employee2 { }
@@ -16,7 +16,7 @@ namespace CSarpEx
         private Dictionary<string, string> hash = new();
 
         [STAThread]
-        static void Main09_5()
+        public static void Main09_5()
         {
             // var 사용
             var a = new Employee2();

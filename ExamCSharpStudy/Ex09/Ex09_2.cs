@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSarpEx
+namespace ExamCSarpStudy.Ex09
 {
     public class Person
     {
@@ -39,7 +39,7 @@ namespace CSarpEx
 
     class Ex09_2
     {
-        static void Main09_02()
+        public static void Main09_02()
         {
             Person p1 = new Person("Tom");
 

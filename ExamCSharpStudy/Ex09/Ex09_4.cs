@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CSarpEx
+namespace ExamCSarpStudy.Ex09
 {
 
     class Ex09_4
     {
 
-        static void Main09_4()
+        public static void Main09_4()
         {
             char g = GetGrade(75);
             Console.WriteLine(g);

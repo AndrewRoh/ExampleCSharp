@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSarpEx.Ex08
+namespace ExamCSarpStudy.Ex08
 {
     internal class Shape
     {

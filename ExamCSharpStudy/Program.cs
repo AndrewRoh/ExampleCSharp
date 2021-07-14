@@ -6,7 +6,8 @@ namespace ExamCSharpStudy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ExamCSarpStudy.Ex08.Ex08_1.Main08_1();
+            //Console.WriteLine("Hello World!");
         }
     }
 }
