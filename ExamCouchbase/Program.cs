@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SeriLog2Couchbase
+namespace ExamCouchbase
 {
     class Program
     {
