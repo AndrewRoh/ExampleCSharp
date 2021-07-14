@@ -1,4 +1,7 @@
 ﻿using Couchbase;
+using Couchbase.Search.Queries.Compound;
+using Couchbase.Search.Queries.Range;
+using Couchbase.Search.Queries.Simple;
 using System;
 using System.Threading.Tasks;
 
@@ -26,8 +29,8 @@ namespace ExamCouchbase
                 var getResult = await collection.GetAsync(strKey);
                 Console.WriteLine($"getResult cas: {getResult.Cas}\n{getResult.ContentAs<dynamic>()}");
 
-                // get documents from cluster
-                var queryResult = await cluster.QueryAsync<dynamic>("SELECT t.* FROM `travel-sample` t WHERE t.type=$1 LIMIT 500",
+                // get documents from cluster QueryAsync
+                var queryResult = await cluster.QueryAsync<dynamic>("SELECT t.* FROM `travel-sample` t WHERE t.type=$1 LIMIT 5",
                 options =>
                 {
                     options.Parameter("landmark");
@@ -54,7 +57,7 @@ namespace ExamCouchbase
                 Console.WriteLine($"Exception Reason: {ex}");
                 //throw;
             }
-            
+
         }
     }
 }
