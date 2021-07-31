@@ -13,16 +13,16 @@ namespace ExamCouchbase
         {
             try
             {
-                var cluster = await Cluster.ConnectAsync("couchbase://192.168.0.94", "user1", "password");
+                var cluster = await Cluster.ConnectAsync("couchbase://192.168.0.11", "user1", "password");
 
                 // get a bucket reference
                 var bucket = await cluster.BucketAsync("travel-sample");
 
-                //var scope = bucket.Scope("myscope");
-                //var collection = scope.Collection("mycollection");
+                var scope = bucket.Scope("inventory");
+                var collection = scope.Collection("airline");
 
                 // get a collection reference
-                var collection = bucket.DefaultCollection();
+                // var collection = bucket.DefaultCollection();
 
                 // get document from collection
                 var strKey = $"airline_10";
@@ -45,8 +45,15 @@ namespace ExamCouchbase
                     Console.WriteLine(row);
                     resultCount++;
                 }
-
                 Console.WriteLine($"Complete! resultCount: {resultCount}");
+
+                // check exist primary index
+                var indexResult = await cluster.QueryAsync<dynamic>("SELECT name FROM system:indexes WHERE name ='def_primary'and is_primary=true and keyspace_id='travel-sample'").ConfigureAwait(false);
+                
+                await foreach (var row in indexResult)
+                {
+                    Console.WriteLine(row);                    
+                }
             }
             catch (AuthenticationFailureException ex)
             {
