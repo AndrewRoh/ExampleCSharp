@@ -2,10 +2,9 @@
 # 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
 ################################################################################
 
-/ExamCSharpStudy/bin/Debug/net5.0
-/ExamCSharpStudy/.vs/ExamCSharpStudy/v16
-/ExamCSharpStudy/obj/Debug/net5.0
-/ExamCSharpStudy/obj/Release/net5.0
-/ExamCouchbase/.vs/ExamCouchbase/v16
+/ExamCSharpStudy/bin
+/ExamCSharpStudy/.vs
+/ExamCSharpStudy/obj
+/ExamCouchbase/.vs
 /ExamCouchbase/obj
-/ExamCouchbase/bin/Debug/net5.0
+/ExamCouchbase/bin
