@@ -5,6 +5,13 @@
 /ExamCSharpStudy/bin
 /ExamCSharpStudy/.vs
 /ExamCSharpStudy/obj
+
 /ExamCouchbase/.vs
 /ExamCouchbase/obj
 /ExamCouchbase/bin
+
+/ExamConsoleTest/.vs
+/ExamConsoleTest/obj
+/ExamConsoleTest/bin
+
+*.idea
